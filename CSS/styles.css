@@ -37,8 +37,7 @@ body {
     background-color:var(--white-color) ;
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.5;
-    
+    line-height: 1.5;    
 }
 
 /* прибирання крапок переліку  */
@@ -88,8 +87,7 @@ img{
     line-height: 1.33;
     text-transform:uppercase;
     text-decoration: none;
-    color:var(--dark-color)
-    
+    color:var(--dark-color)    
 }
 
 .site-nav{
@@ -103,6 +101,7 @@ img{
 .site-nav .item + .item {
     margin-left: 40px;
 }
+
 .item{
     display: block;    
 }
@@ -177,9 +176,8 @@ img{
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
-    text-align: center;
-    
-    }
+    text-align: center;    
+}
     
 .button-hero{
     border-radius: 4px;
@@ -201,9 +199,9 @@ img{
    
 .button-hero:hover,
 .button-hero:focus{
-        background-color:#404BBF; 
-        color:var(--white-color);
-    }    
+    background-color:#404BBF; 
+    color:var(--white-color);
+}    
 
 /* Секція 2 скіли */
 .container{
@@ -224,7 +222,7 @@ margin-right: auto;
       clip: rect(0 0 0 0);
       clip-path: inset(50%);
       margin: -1px;
-  } 
+} 
 
 .service{
     text-align: left; 
@@ -325,18 +323,20 @@ footer{
     margin-top: 16px;
 }
 
- /* Button Filter */
+/* Button Filter */
+
 .button{
     border-radius: 4px;
     /* розібратись з правильними падінгами і марджином від шрифта */
     padding: 12px 24px;
-     border: 0.5px solid var(--accent-color);  
+    border: 0.5px solid var(--accent-color);  
     
 
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;   
     font-family: inherit;
+
     background-color:var(--accent-color);
     color:var(--prbrand-color);
     letter-spacing:0.04em;
@@ -355,7 +355,8 @@ footer{
 
 .portfolio{
     padding-left: 0;
-    
+    padding-top: 96px ;
+    padding-bottom: 120px;
     text-align: left;    
 }
 
@@ -363,7 +364,7 @@ footer{
     display: flex;
     justify-content: center;
     padding-left: 0;
-    margin-top: 96px;
+    margin-top: 0;
     margin-bottom: 72px ;
     gap: 24px;    
 }
@@ -374,7 +375,6 @@ footer{
     display: flex;
     flex-wrap: wrap;
     gap: 48px 24px;
-    margin-bottom:120px ;
 }
 
 /* .sample{
@@ -390,6 +390,7 @@ footer{
     text-transform:capitalize;
     color:var(--dark-color);     
 }
+
 .sample-element{
     padding-bottom: 32px;
     padding-left: 16px;
