@@ -47,6 +47,12 @@ h1,h2,h3,p{
     padding: 0;
 }
 
+/* переведення зображень в блоки щоб прибрати паразитні падінги */
+img{
+    display: block;
+    max-width: 100%;
+}
+
 .list{
     list-style: none;
 }
@@ -56,10 +62,9 @@ h1,h2,h3,p{
 /* Header */
 .page-header{
     align-items: center;
-    display: flex;
-    
-
-    background-color: var(--light-color);
+    display: flex;  
+    border-bottom: 1px solid var(--subtle-color) ;
+    background-color: var(--white-color);
 
 }
 
@@ -304,13 +309,7 @@ margin-right: auto;
     text-transform:capitalize;   
 }
 
-.section-subh{
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.2; 
-    text-transform:capitalize;
-    color:var(--dark-color);     
-}
+
 
 /* футер зміна кольорів */
 footer{
@@ -371,8 +370,53 @@ color:var(--accent-color) ;
 /* індивідуальні стилі портфоліо  */
 
 .portfolio{
-    text-align: left;
+    width: 1128px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0
+    ;
     
+    text-align: left;    
+}
+
+.portfolio-filter{
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-top: 96px;
+    margin-bottom: 72px ;
+    gap: 24px;    
+}
+
+.portfolio-samples{
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+    margin-bottom:120px ;
+}
+
+/* .sample{
+    
+} */
+
+.section-subh{
+    margin-bottom: 8px;
+    
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2; 
+    text-transform:capitalize;
+    color:var(--dark-color);     
+}
+.sample-element{
+    padding-bottom: 32px;
+    padding-left: 16px;
+    padding-top: 32px;
+    border-bottom: 0.5px solid var(--light-color);
+    border-left: 0.5px solid var(--light-color);
+    border-right: 0.5px solid var(--light-color);
 }
 
 .list-potfolio{
