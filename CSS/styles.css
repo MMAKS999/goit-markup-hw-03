@@ -65,7 +65,6 @@ img{
     display: flex;  
     border-bottom: 1px solid var(--subtle-color) ;
     background-color: var(--white-color);
-
 }
 
 .block-nav{
@@ -76,15 +75,13 @@ img{
 
 .logo-color{
     color:var(--prbrand-color);
-    margin-right: -4px;
-    
+    margin-right: -4px;    
 }
 
 .logo{
     padding-top: 24px ;
     padding-bottom: 24px;
-    margin-left:156px ;
-
+  
     font-family: 'Raleway';
     font-weight: 800;
     font-size: 18px;
@@ -107,8 +104,7 @@ img{
     margin-left: 40px;
 }
 .item{
-    display: block;
-    
+    display: block;    
 }
 
 
@@ -145,8 +141,7 @@ img{
     display: flex;
     padding: 0;
     margin: 0;
-    margin-left: 331px;
-   
+    margin-left: 331px;   
 }
 
 .contact-link{
@@ -239,15 +234,15 @@ margin-right: auto;
     display: flex;
     padding-left: 0;
     justify-content: space-between;
+    padding-bottom: 72px;
     gap: 22px;
 
-    padding-bottom: 120px ;
     margin: 0;
     
 }
 
 .servic-subh{
-    margin-top: 120px;
+    
     margin-bottom: 8px;
 
     font-weight: 700;
@@ -267,8 +262,8 @@ margin-right: auto;
     display: flex;
     padding-left: 0;
     justify-content: space-between;
-    margin-top: 0;
-    margin-bottom:120px ;
+    margin-top: 0;   
+    margin-bottom: 0; 
 }
 
 
@@ -277,10 +272,7 @@ margin-right: auto;
     background-color: var(--light-color);    
 }
 
-.our-team-displey{
-    width: 1128px;
-    margin-left: auto;
-    margin-right: auto;
+.section{
     padding-bottom: 120px;
     padding-top:120px ;
 }
@@ -313,14 +305,11 @@ margin-right: auto;
 
 /* футер зміна кольорів */
 footer{
-background-color:var(--dark-color);
-color:var(--accent-color) ;
+    background-color:var(--dark-color);
+    color:var(--accent-color) ;
 }
 
 .footer-block{
-    width: 1128px;
-    margin-left: auto;
-    margin-right: auto;
     padding-top:100px ;  
     padding-bottom: 100px;
 }
@@ -362,19 +351,10 @@ color:var(--accent-color) ;
     color: var(--accent-color);
 }
  
-
-
-
-
-
 /* індивідуальні стилі портфоліо  */
 
 .portfolio{
-    width: 1128px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0
-    ;
+    padding-left: 0;
     
     text-align: left;    
 }
@@ -424,6 +404,3 @@ color:var(--accent-color) ;
     color: var(--text-color) ;
 }
 
-.container{
-    outline: tomato;
-}
