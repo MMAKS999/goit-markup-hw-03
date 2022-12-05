@@ -25,6 +25,12 @@ Declaration order
 
 
 body {
+   
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    
+            
     color:var( --text-color);
     font-family:'Roboto', sans-serif;
     letter-spacing: 0.02em;
@@ -34,7 +40,13 @@ body {
     line-height: 1.5;
     
 }
+
 /* прибирання крапок переліку  */
+h1,h2,h3,p{
+    margin: 0;
+    padding: 0;
+}
+
 .list{
     list-style: none;
 }
@@ -43,9 +55,19 @@ body {
 
 /* Header */
 .page-header{
+    align-items: center;
+    display: flex;
+    
+
     background-color: var(--light-color);
 
 }
+
+.block-nav{
+    display: flex;
+    align-items: center;
+}
+
 
 .logo-color{
     color:var(--prbrand-color);
@@ -54,6 +76,10 @@ body {
 }
 
 .logo{
+    padding-top: 24px ;
+    padding-bottom: 24px;
+    margin-left:156px ;
+
     font-family: 'Raleway';
     font-weight: 800;
     font-size: 18px;
@@ -61,19 +87,39 @@ body {
     text-transform:uppercase;
     text-decoration: none;
     color:var(--dark-color)
-     
+    
 }
-/* Виділення логотипу при наведені, зараз розпізнається як 2ва різних елементи і виділяється по одному
+
+.site-nav{
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 77px;
+    padding: 0;   
+}
+
+.site-nav .item + .item {
+    margin-left: 40px;
+}
+.item{
+    display: block;
+    
+}
 
 
-ЯК ЗРОБИТИ ВИДІЛЕННЯ ВСЬОГО ЛОГОТИПУ ПРИ НАВЕДЕНІ обгорнути ще в div? 
+/* альтернативний метод задання відступу: 
+    .site-nav .item:not(:last-child){
+    marin-right: 40px;
+    }
 */
-
 
 /*header  панель навігації студія-контакт */
 
 .nav-link{
-    
+    display: block;
+    padding:  24px 0;
+
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -90,7 +136,18 @@ body {
     color:var(--prbrand-color);  
 }
 
+.contact-date{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-left: 331px;
+   
+}
+
 .contact-link{
+    display: block;
+    padding:  24px 0;
+
     text-decoration: none;
     color: var(--text-color);
 }
@@ -100,33 +157,44 @@ body {
     color:var(--prbrand-color);    
 }
 
+.contact-date .item + .item{
+    margin-left: 40px;
+}
 
 /* main */
+
+
 .hero{
     text-align: center;
     background-color: var(--dark-color);
-   
+    padding: 192px;
 }
 
 .hero-title{
+    margin-bottom: 48px;
+    
     color:var(--light-color) ;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
-    text-transform:capitalize;
+    
     }
     
 .button-hero{
+    border-radius: 4px;
+    padding: 16px 32px;
+    border: 0px;
+
+
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.5;   
+    line-height: 1.2;   
     font-family: inherit;
     background-color:var(--prbrand-color);
     color:var(--light-color);
     letter-spacing:0.04em;
     cursor:pointer;
-    border-radius: 4px;
 }
     
         
@@ -137,7 +205,12 @@ body {
         color:var(--white-color);
     }    
 
-
+/* Секція 2 скіли */
+.container{
+width: 1128px;
+margin-left: auto;
+margin-right: auto;
+}
 
 /* заголовок який потрібно приховати */
 .visually-hidden {
@@ -153,11 +226,25 @@ body {
       margin: -1px;
   } 
 
-
 .service{
     text-align: left; 
 }
+
+.service-list{
+    display: flex;
+    padding-left: 0;
+    justify-content: space-between;
+    gap: 22px;
+
+    padding-bottom: 120px ;
+    margin: 0;
+    
+}
+
 .servic-subh{
+    margin-top: 120px;
+    margin-bottom: 8px;
+
     font-weight: 700;
     font-size: 20px;
     line-height: 1.2; 
@@ -169,19 +256,47 @@ body {
 
 .wedoing{
     text-align: center;
+   
+}
+.wedoing-list{
+    display: flex;
+    padding-left: 0;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom:120px ;
 }
 
 
-.our-team{
+.our-team{      
     text-align: center;
-    background-color: var(--light-color);
+    background-color: var(--light-color);    
+}
+
+.our-team-displey{
+    width: 1128px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 120px;
+    padding-top:120px ;
+}
+
+.our-team-list{
+    display: flex;
+    padding-left: 0;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom:0px ;
 }
 
 .team-icon{
     background-color: var(--white-color);
+    border-radius: 0px 0px 4px 4px;
+
 }
 
 .section-title{
+    margin-bottom: 72px;
+
     color:var(--dark-color) ;
     font-weight: 700;
     font-size: 36px;
@@ -194,8 +309,7 @@ body {
     font-size: 20px;
     line-height: 1.2; 
     text-transform:capitalize;
-    color:var(--dark-color); 
-    
+    color:var(--dark-color);     
 }
 
 /* футер зміна кольорів */
@@ -204,12 +318,33 @@ background-color:var(--dark-color);
 color:var(--accent-color) ;
 }
 
+.footer-block{
+    width: 1128px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:100px ;  
+    padding-bottom: 100px;
+}
+
 .logo-footer{
+    margin-left: 0;
+    
     color:var(--light-color);
+}
+
+.footer-text{
+    width: 264px;
+    margin-top: 16px;
 }
 
  /* Button Filter */
 .button{
+    border-radius: 4px;
+    /* розібратись з правильними падінгами і марджином від шрифта */
+    padding: 12px 24px;
+     border: 0.5px solid var(--accent-color);  
+    
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;   
@@ -217,13 +352,13 @@ color:var(--accent-color) ;
     background-color:var(--accent-color);
     color:var(--prbrand-color);
     letter-spacing:0.04em;
-    cursor:pointer;
-    border-radius: 4px;
-    
+    cursor:pointer;       
 }
 
 .button:hover,
 .button:focus{
+    border:0.5px solid transparent;
+
     background-color:var(--prbrand-color); 
     color: var(--accent-color);
 }
@@ -243,4 +378,8 @@ color:var(--accent-color) ;
 .list-potfolio{
     text-decoration: none;
     color: var(--text-color) ;
+}
+
+.container{
+    outline: tomato;
 }
