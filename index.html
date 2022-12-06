@@ -14,24 +14,26 @@
 </head>
 <body>
     <!-- шапка сайта -->
-    <header class="page-header container">
-        <nav class="block-nav">
-            <a href="./index.html" class="logo">
-                <Span class="logo-color">Web</Span> Studio
-            </a>
-       
-    
-            <ul class="site-nav list">
-                <li class="item"> <a  href="./index.html" class="nav-link current">Studio</a></li>
-                <li class="item"> <a  href="./portfolio.html" class="nav-link">Portfolio</a></li>
-                <li class="item"> <a  href="" class="nav-link">Contacts</a></li>
-            </ul>               
-        </nav>
+    <header>
+        <div class="container page-header">
+            <nav class="block-nav">
+                <a href="./index.html" class="logo">
+                    <Span class="logo-color">Web</Span> Studio
+                </a>
+        
+        
+                <ul class="site-nav list">
+                    <li class="item"> <a  href="./index.html" class="nav-link current">Studio</a></li>
+                    <li class="item"> <a  href="./portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li class="item"> <a  href="" class="nav-link">Contacts</a></li>
+                </ul>               
+            </nav>
 
-        <ul class="contact-date list">
-            <li class="item"><a href="mailto:info@devstudio.com" class="contact-link">info@devstudio.com</a></li>
-            <li class="item"><a href="tel:+110001111111" class="contact-link"> +11 (000) 111-11-11</a></li>
-        </ul>
+            <ul class="contact-date list">
+                <li class="item"><a href="mailto:info@devstudio.com" class="contact-link">info@devstudio.com</a></li>
+                <li class="item"><a href="tel:+110001111111" class="contact-link"> +11 (000) 111-11-11</a></li>
+            </ul>
+        </div>
 
     </header>
     
@@ -44,8 +46,9 @@
                 
             </section>
             
-        <div class="container section">
-            <section class="service">
+       
+        <section class="service section">
+            <div class="container">
                 <h2 class="visually-hidden">Services</h2>
                 <ul class="list service-list ">
                     <li>
@@ -69,55 +72,57 @@
                     </li>
 
                 </ul>
-        
-            </section>
+            </div>
+         </section>
 
             <section class="wedoing">
-                <h2 class="section-title">What are we doing</h2>
-                <ul class="list wedoing-list">
-                    <li> <img src="./images/PS.jpg" alt="Monitor" width="360"></li>
-                    <li> <img src="./images/Menu_phone.jpg" alt="Menu phone" width="360"></li>
-                    <li> <img src="./images/Phone.jpg" alt="hone" width="360"></li>
-                </ul>
+                <div class="container">
+                    <h2 class="section-title">What are we doing</h2>
+                    <ul class="list wedoing-list">
+                        <li> <img src="./images/PS.jpg" alt="Monitor" width="360"></li>
+                        <li> <img src="./images/Menu_phone.jpg" alt="Menu phone" width="360"></li>
+                        <li> <img src="./images/Phone.jpg" alt="hone" width="360"></li>
+                    </ul>
+                </div>   
             </section>
-        </div>
+        
 
-        <section class="our-team">
-            <div class="section container">
+        <section class="section our-team">
+            <div class=" container">
                 <h2 class="section-title">Our Team</h2>
                 <ul class="list  our-team-list">
                     <li class="team-icon">
-                    
                             <img src="./images/Mark.jpg" alt="Photo Mark" width="264">
+                        <div class="team-text">
                             <h3 class="section-subh">Mark guerrero</h3>
                             <p>Product Designer</p>
-                    
+                        </div>
                         
                     </li>
 
                     <li class="team-icon">
-                        
                             <img src="./images/Tom.jpg" alt="Photo Tom" width="264">
+                        <div class="team-text">
                             <h3 class="section-subh">Tom Ford</h3>
                             <p>Frontend Developer</p> 
-                    
+                        </div>
                         
                     </li>
 
                     <li class="team-icon">
-                    
                             <img src="./images/Camila.jpg" alt="Photo Camila" width="264">
+                        <div class="team-text">
                             <h3 class="section-subh">Camila Garcia</h3>
                             <p>Marketing</p>                    
-                    
+                        </div>
                     </li>
 
-                    <li class="team-icon">
-                
+                    <li class="team-icon">                       
                             <img src="./images/Daniel.jpg" alt="Photo Daniel" width="264">
+                        <div class="team-text">
                             <h3 class="section-subh">Daniel Wilson</h3>
                             <p>UI Designer</p>                    
-                    
+                        </div>
                     </li>
                 
                 </ul>                

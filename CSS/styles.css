@@ -26,16 +26,15 @@ Declaration order
 
 body {
    
-    width: 1440px;
+    /* width: 1440px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; */
     
             
     color:var( --text-color);
     font-family:'Roboto', sans-serif;
     letter-spacing: 0.02em;
     background-color:var(--white-color) ;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;    
 }
@@ -205,9 +204,11 @@ img{
 
 /* Секція 2 скіли */
 .container{
-width: 1128px;
+width: 1152px;
 margin-left: auto;
 margin-right: auto;
+padding-left: 12px;
+padding-right: 12px;
 }
 
 /* заголовок який потрібно приховати */
@@ -232,7 +233,6 @@ margin-right: auto;
     display: flex;
     padding-left: 0;
     justify-content: space-between;
-    padding-bottom: 72px;
     gap: 22px;
 
     margin: 0;
@@ -254,6 +254,7 @@ margin-right: auto;
 
 .wedoing{
     text-align: center;
+    padding-bottom: 120px;
    
 }
 .wedoing-list{
@@ -273,6 +274,7 @@ margin-right: auto;
 .section{
     padding-bottom: 120px;
     padding-top:120px ;
+    
 }
 
 .our-team-list{
@@ -286,7 +288,11 @@ margin-right: auto;
 .team-icon{
     background-color: var(--white-color);
     border-radius: 0px 0px 4px 4px;
+}
 
+.team-text{
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .section-title{
@@ -314,6 +320,7 @@ footer{
 
 .logo-footer{
     margin-left: 0;
+    padding: 0;
     
     color:var(--light-color);
 }
